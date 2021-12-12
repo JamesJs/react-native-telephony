@@ -56,7 +56,7 @@ componentWillMount() {
   })
 
   Telephony.getCellInfo((cellInfos) => {
-    celInfos.map((info) => {
+    cellInfos.map((info) => {
       switch(info.connectionType) {
         case "CDMA":
           console.log(info.cellIdentity)
